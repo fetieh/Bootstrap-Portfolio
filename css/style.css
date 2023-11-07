@@ -5,12 +5,12 @@ html {
 /* Styling of Header */
 
 .navbar-brand {
-  margin-right: 0; /* Reset margin on the right */
-  margin-left: 10px; /* Add margin on the left */
+  margin-right: 0; /
+  margin-left: 10px; 
 }
 
 
-/* About Me Part */
+/* Hero Part */
 .intro {
   display: flex;
   flex-flow: nowrap column; 
@@ -97,11 +97,7 @@ h2 {
 
   .custom-img {
     height: 240px;
- 
- 
 }
-
-
 
 
 /* Typography of Cards */
@@ -145,8 +141,6 @@ h2 {
 
 /*Skill Bar */
 
-
-
 .progress {
   height: 40px;
   margin: 15px;
@@ -158,7 +152,7 @@ h2 {
   background-color: rgb(185, 74, 148);
 }
 
-/* Carousel Image */
+/* Carousel Image - About Me */
 
 .wrapper {
   position: absolute;
@@ -190,7 +184,7 @@ h2 {
 }
 
 
-/* Contact Me*/ 
+/* Footer Section */ 
 
 .footer {
 
@@ -200,8 +194,8 @@ h2 {
 }
 
 .social-media {
-  text-align: center; /* Center-align the child elements */
-  margin-top: 10px; /* Adjust the margin as needed */
+  text-align: center; 
+  margin-top: 10px; /
 }
 .fa {
   padding: 10px;
@@ -212,12 +206,10 @@ h2 {
   text-decoration: none;
 }
 
-
 .fa-google {
   background: #dd4b39;
   color: white;
 }
-
 
 .fa-linkedin {
   background: #007bb5;
@@ -243,9 +235,6 @@ h2 {
 
 
 
-
-
-
 @media only screen and (max-width: 600px) {
 
 
@@ -257,13 +246,4 @@ h2 {
     padding: 1%;
   }
 
- 
- 
-
-  #ContactMe {
-    
-    margin: 20px;
-  }
 }
-  
-
