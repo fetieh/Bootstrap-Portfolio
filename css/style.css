@@ -82,13 +82,13 @@ h2 {
   
 }
 
-form {
+.contactme {
   color:rgb(185, 74, 148);
   padding: 50px;  
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   margin: 0px 10%;  
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   flex-flow: column nowrap;
 
 }
@@ -127,13 +127,13 @@ form {
   color: rgb(185, 74, 148);
 }
 
-.btn {
+.buttonworks {
  background-color: rgba(255, 255, 255, 0.301) ;
  color: rgb(185, 74, 148);
  border: 2px solid rgb(185, 74, 148) ;
 }
 
-.btn-primary:hover {
+.buttonworks:hover {
   color: white;
   background-color: rgb(185, 74, 148);
   border: rgb(185, 74, 148);
@@ -152,8 +152,87 @@ form {
 }
 
 
+/*Skill Bar */
 
 
+
+.progress {
+  height: 40px;
+  margin: 15px;
+  color: rgb(185, 74, 148);
+}
+
+.progress-bar {
+  color: rgba(255,255,255,0.8);
+  background-color: rgb(185, 74, 148);
+}
+
+/* Carousel Image */
+
+.wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+
+
+.carousel {
+  max-width: 600px;
+  max-height: 750px;
+  margin: 0 auto;
+}
+
+.carousel-caption {
+  background-color: rgba(255, 255, 255, 0.65);
+  color: rgb(185, 74, 148);
+}
+
+
+.carousel-image {
+  max-width: 100%;
+  max-height: 100%;
+  width: auto; /* Prevent stretching the image */
+  height: auto; /* Maintain aspect ratio */
+  margin: 0 auto; /* Center the image horizontally within the carousel */
+}
+
+
+/* Contact Me*/ 
+
+.fa {
+  padding: 40px;
+  font-size: 50px;
+  width: 100px;
+  text-align: right;
+  right: 100px;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.fa-instagram {
+  background: rgb(77, 5, 5);
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+  opacity: 0.7;
+}
+
+                                                                                                                                  
 /*Media Queries*/
 
 
