@@ -87,8 +87,7 @@ h2 {
   padding: 50px;  
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   margin: 0px 10%;  
-  display: flex;
-  justify-content: flex-start;
+
   flex-flow: column nowrap;
 
 }
@@ -102,15 +101,7 @@ h2 {
  
 }
 
-.footer {
 
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  background-color:  rgba(204, 178, 178, 0.8);
-  color: rgb(185, 74, 148);
-  max-height: 100px;
-}
 
 
 /* Typography of Cards */
@@ -201,16 +192,32 @@ h2 {
 
 /* Contact Me*/ 
 
+.footer {
+
+  background-color:  rgba(204, 178, 178, 0.8); 
+  color: rgb(185, 74, 148);
+  max-height: 400px;
+}
+
+.social-media {
+  text-align: center; /* Center-align the child elements */
+  margin-top: 10px; /* Adjust the margin as needed */
+}
 .fa {
-  padding: 40px;
+  padding: 10px;
   font-size: 50px;
-  width: 100px;
-  text-align: right;
-  right: 100px;
-  display: flex;
-  align-items: center;
+  width: 30px;
+  text-align: center;
+  margin: 5px;  
   text-decoration: none;
 }
+
+
+.fa-google {
+  background: #dd4b39;
+  color: white;
+}
+
 
 .fa-linkedin {
   background: #007bb5;
@@ -227,7 +234,6 @@ h2 {
   color: white;
 }
 
-/* Add a hover effect if you want */
 .fa:hover {
   opacity: 0.7;
 }
