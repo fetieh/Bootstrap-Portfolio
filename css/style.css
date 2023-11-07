@@ -3,24 +3,12 @@ html {
 }
 
 /* Styling of Header */
-.nav { 
-  display: flex;
-  background-color: white;
-  color: pink;
-  padding: 20px;
- 
-}
-.logo{
-  display: flex;
-  align-items: flex-start;
-}
-.menu {
 
-  display: flex;
-  justify-content: flex-end;
-  
-
+.navbar-brand {
+  margin-right: 0; /* Reset margin on the right */
+  margin-left: 10px; /* Add margin on the left */
 }
+
 
 /* About Me Part */
 .intro {
@@ -46,7 +34,7 @@ html {
 /* Typography CSS */
 
 h1 {
-  text-align: left;
+  text-align: center;
   color: rgb(185, 74, 148);
 
 }
@@ -56,20 +44,19 @@ h1 {
   color: rgb(185, 74, 148);
 }
 
-.menu a {
-  font-size: 18px;
-  color: rgb(185, 74, 148);
-  text-decoration: none;
+.navbar {
+  color: rgb(185, 74, 148) !important;
+  background-color: white !important;
   font-family: 'Times New Roman', Times, serif;
   padding: 10px;
-
+}
+.nav-link {
+  color: rgb(185, 74, 148);
 }
 
 .py-5 {
   padding-top: 0% !important;
 }
-
-
 
 .intro p {
   background-color: rgba(255, 255, 255, 0.65);
@@ -106,8 +93,13 @@ form {
 
 }
 
-#MyWorks a {
-  text-decoration: none;
+#MyWorks {
+  text-decoration: none; }
+
+  .custom-img {
+    height: 240px;
+ 
+ 
 }
 
 .footer {
@@ -121,68 +113,42 @@ form {
 }
 
 
-/* Grid CSS */
+/* Typography of Cards */
 
 
-#MyWorks {
- 
-margin: 0px 10%;
-display: grid;
-min-height: 500px;
-height: 100vh;
-gap: 10px;
-grid-template-columns: 50% 50% ;
-grid-template-rows: 25% 25% 25% 25%;
-grid-template-areas: "xwebsite xwebsite"
-                       "xwebsite xwebsite"
-                      "ywebsite zwebsite"
-                      "wwebsite awebsite";
+.cardContainer {
+  margin-bottom: 15px;
+}
 
+.card {
+  margin: 0 auto;
+  text-align: end;
+  border-bottom: 5px solid rgb(185, 74, 148); 
+  color: rgb(185, 74, 148);
+}
+
+.btn {
+ background-color: rgba(255, 255, 255, 0.301) ;
+ color: rgb(185, 74, 148);
+ border: 2px solid rgb(185, 74, 148) ;
+}
+
+.btn-primary:hover {
+  color: white;
+  background-color: rgb(185, 74, 148);
+  border: rgb(185, 74, 148);
+}
+
+.card body {
+  background-color: rgba(255,255,255,0.8);
+  padding: 15px;
+  height: 25px;
+  color: rgb(185, 74, 148);
+  font-size: 18px;
+  border-bottom: 5px solid rgb(185, 74, 148); 
+  text-align: end;
   
-}
 
-#xwebsite {
-  grid-area: xwebsite ;
-  background-image: url(../images/xwebsite.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-
-}
-
-#ywebsite {
-  grid-area: ywebsite;
-  background-image: url(../images/ywebsite.jpg)
-}
-
-#zwebsite {
-  grid-area: zwebsite;
-  background-image: url(../images/zwebsite.png);    
-}
-
-#wwebsite {
-   grid-area: wwebsite;
-   background-image: url(../images/wwebsite.png);
-   
-}
-
-#awebsite {
-  grid-area: awebsite;
-  background-image: url(../images/awebsite.jpg);  
-}
-
-#ConctacMe {
-  margin: 0px 5%;
-}
-
-.GridArea {
-background-position: center;
-background-repeat: no-repeat;
-background-size: cover;
-margin: 5px;
-cursor: pointer;
-display: grid;  
-align-content: end;
-align-items: end;
 }
 
 
@@ -190,45 +156,24 @@ align-items: end;
 
 /*Media Queries*/
 
-@media only screen and (max-width: 1000px) {
-.menu {
-  margin-left: auto;
-  justify-content: center;
- }
 
 
-h1 {
-  font-size: 24px;
-}
-}
+
 
 
 @media only screen and (max-width: 600px) {
-  .intro  {
-    margin: 20px;
-    padding: 20px;
-    font-size: 11px;
-  }
 
-  .intro p, .col-md-8 fs-4  {
-    
-    font-size: 10px; 
+
+  
+ .intro .fs-4  {
+    justify-content: center;
+    font-size: 11px !important; 
+    margin: 1%;
+    padding: 1%;
   }
 
  
-  #MyWorks {
-    margin: 20px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(5, 1fr);
-    grid-template-areas:
-      "xwebsite ywebsite"
-      "xwebsite ywebsite"
-      "xwebsite wwebsite"
-      "zwebsite awebsite"
-      "zwebsite awebsite";
-  }
-
+ 
 
   #ContactMe {
     
